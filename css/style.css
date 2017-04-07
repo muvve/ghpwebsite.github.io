@@ -1596,7 +1596,7 @@ a.social.rss:hover {
 input[type="text"].formFieldError,
 input[type="email"].formFieldError,
 textarea.formFieldError {
-  border-color: #e34444 !important;
+  border-color: #25a1da !important;
 }
 footer.site-footer {
   background-color: #fcfcfc;
