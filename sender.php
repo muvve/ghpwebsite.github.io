@@ -7,8 +7,8 @@
  **************************************
  */
 
-$to = 'YOUR_EMAIL_ADDRESS';
-$siteName = "YOUR_SITE_NAME";
+$to = 'gina@ghphealthcare.com';
+$siteName = "http://www.ghphealthcare.com";
 
 /*
  *************************************************************
