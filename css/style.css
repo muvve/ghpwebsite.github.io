@@ -9,6 +9,9 @@
  * This theme under "Attribution-NonCommercial CC BY-NC". You can't remove footer credit link.
  */
 body {
+  width: 100%auto;
+  height: 100%auto;
+  overflow-x: hidden; 
   font-family: "Open Sans";
   color: #808080;
   font-weight: 400;
