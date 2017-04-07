@@ -17,6 +17,14 @@ body {
   word-spacing: 2px;
   -webkit-font-smoothing: antialiased;
 }
+
+@media (max-width: 767px) {
+  body{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
 p {
   margin-bottom: 26px;
 }
