@@ -485,8 +485,7 @@ h6 {
   font-weight: 400;
   letter-spacing: 8px;
   word-spacing: 4px;
-  margin-bottom: 15px;
-  margin-top: 5px;
+  margin: auto;
   padding: 20px 10px;
   width: 90%;
 }
