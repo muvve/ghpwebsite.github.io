@@ -338,6 +338,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: calc(100vh - 72px);
   background: url("../img/background1.jpg") center center;
+  background-attachment: scroll;
   background-size: cover;
   position: relative;
   margin-top: 72px;
