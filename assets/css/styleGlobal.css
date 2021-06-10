@@ -1060,7 +1060,6 @@ blockquote cite:before {
 
 .team .member .member-info-content {
   position: absolute;
-  left: 50px;
   right: 0;
   bottom: 0;
   transition: bottom 0.4s;
@@ -1073,38 +1072,17 @@ blockquote cite:before {
   color: #fff;
 }
 
+.team .member .member-info-content p {
+  font-style: italic;
+  font-size: 13px;
+  color: #fff;
+}
+
 .team .member .member-info-content span {
   font-style: italic;
   display: block;
   font-size: 13px;
   color: #fff;
-}
-
-.team .member .social {
-  position: absolute;
-  left: -50px;
-  top: 0;
-  bottom: 0;
-  width: 50px;
-  transition: left ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  display: block;
-  color: #fff;
-  margin-top: 15px;
-}
-
-.team .member .social a:hover {
-  color: #25A1DA;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
 }
 
 .team .member:hover .member-info {
