@@ -52,9 +52,15 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#hero">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li class="drop-down"><a href="#services">Our Services</a>
+
+          <li class="active enText"><a href="#hero">Home</a></li>
+          <li class="active frText"><a href="#hero">Accueil</a></li>
+
+          <li class="enText"><a href="#about">About Us</a></li>
+          <li class="frText"><a href="#about">À propos de nous</a></li>
+
+          <!--EN-->
+          <li class="drop-down enText"><a href="#services" class="enText">Our Services</a>
             <ul>
               <li><a href="#services">Services</a></li>
               <li><a href="#servicesPremium">Premium Services</a></li>
@@ -62,9 +68,26 @@
               <li><a href="#steps">How it Works</a></li>
             </ul>
           </li>
-          <li><a href="#team">Our Team</a></li>
-          <li><a href="#faq">F.A.Q</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <!--FR-->
+          <li class="drop-down frText"><a href="#services">Nos Services</a>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#servicesPremium">Services Premium</a></li>
+              <li><a href="#location">Nos Implantations</a></li>
+              <li><a href="#steps">Comment Cela Fonctionne</a></li>
+            </ul>
+          </li>
+
+          <li class="enText"><a href="#team">Our Team</a></li>
+          <li class="frText"><a href="#team">Notre équipe</a></li>
+
+          <li class="enText" ><a href="#faq">F.A.Q</a></li>
+          <li class="frText"><a href="#faq">FAQ</a></li>
+
+          <li class="enText"><a href="#contact">Contact Us</a></li>
+          <li class="frText"><a href="#contact">Nous contacter</a></li>
+
+          </li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -75,8 +98,42 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left" data-aos="fade-up">
       <h1>GHP Global Health Services</h1>
-      <h2>Your health. Your Location. Your Way.</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+
+      <h2 class= "enText">Your health. Your Location. Your Way.</h2>
+      <h2 class= "frText">Votre santé. Votre emplacement. À votre façon.</h2>
+
+      <div class="enText">
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      </div>
+      <div class="frText">
+        <a href="#about" class="btn-get-started scrollto">Commencer</a>
+      </div>
+
+      <br>
+      <br>
+      <span>
+        <h2 class="enText">Change Language:</h2>
+        <h2 class="frText">Changer de Langue:</h2>
+        <!-- <button type="button" class="btn btn-primary" id="languageSwitcherButton">French</button> -->
+      </span>
+      <div class="dropdown">
+        <button class="btn btn-get-started dropdown-toggle languageSwitcherDisplay" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          🇺🇸 English
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item languageSwitcherButton" href="#">🇫🇷 Française</a>
+        </div>
+      </div>
+      <!-- <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        </button>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary languageSwitcherButton" id="englishButton">🇺🇸 English</button>
+          <button type="button" class="btn btn-secondary languageSwitcherButton" id="frenchButton">🇫🇷 Française</button>
+          <span class="flag-icon flag-icon-gr"></span>
+        </div>
+      </div> -->
     </div>
   </section><!-- End Hero -->
 
@@ -89,12 +146,17 @@
               <div data-aos="fade-in">
                 <em>
                   <b>
-                    <h4>
+                    <h4 class="enText">
                       You've worked hard to create your lifestyle, don't let your health get in the way of life's most wonderful experiences. 
+                    </h4>
+                    <h4 class="frText">
+                      Vous avez consacré beaucoup d’efforts à votre style de vie, ne laissez pas votre santé vous empêcher de vivre les plus beaux moments de la vie. 
                     </h4>
                   </b>
                 </em>
-                <p>
+
+
+                <p class="enText">
                 <br>
                 GHP Global Health Services is an elite personal and private-duty staffing provider founded on the belief that your best years don't always have to be behind you. 
                 Started by veterans of both the private duty healthcare as well as the luxury goods and logistics industries, 
@@ -103,10 +165,24 @@
                 Our team of private duty care professionals is educated, trained, and certified to provide you with not only elite care but also a compassionate understanding of your physical and emotional wellbeing. 
                 Our focus is simple; to help you get back to doing what you love the most. 
               </p>
+
+              <p class="frText">
+              <br>
+              GHP Global Health Services est un prestataire de services personnalises et privés haut de gamme, 
+              fondé sur la conviction que vos meilleures années ne doivent pas être derrière vous. 
+              Fondée par des vétérans du secteur des soins de santé privés, et de celui des produits de luxe et de la logistique, 
+              GHP Global s’appuie sur des décennies d’expérience pour offrir à ses clients, une approche personnalisée et centrée sur le patient en matière de soins de santé et de style de vie.
+              <br></br>
+              Notre équipe de professionnels des soins privés a été formée et certifiée pour vous fournir non seulement des soins de qualité, mais aussi une attention particulière à votre bien-être physique et émotionnel. Notre objectif est simple : vous aider à retrouver ce que vous aimez le plus.  
+              </p>
+
+
+
               </div>
             </div>
           </div>
           <br></br>
+
           <!-- MOSAIC GALLERY -->
           <div id="my_nanogallery2" data-nanogallery2 = '{
             "thumbnailOpenInLightox": false,
@@ -139,43 +215,73 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Services</h2>
-          <p>GHP Global Health Services specializes in providing private duty care programs that are tailored to an individual's specific needs. 
+
+          <h2 class="enText">Services</h2>
+          <h2 class="frText">Nos Services</h2>
+
+          <p class="enText">GHP Global Health Services specializes in providing private duty care programs that are tailored to an individual's specific needs. 
             We often care for those who have post-surgery or post-hospital discharge needs. 
             Our services are also ideal for those who face activities of daily living, lifestyle challenges and mobility difficulties related to their current health conditions.
           </p>
+          <p class="frText">GHP Global Health Services est spécialisé dans la fourniture de programmes de soins privés adaptés aux besoins spécifiques de chaque personne. Nous nous occupons souvent des personnes qui ont des besoins après une intervention chirurgicale ou une sortie d'hôpital. Nos services sont également idéaux pour les personnes qui sont confrontées à des activités de la vie quotidienne, à des défis de style de vie et à des difficultés de mobilité liées à leur état de santé actuel.
+          </p>
+
+
         </div>
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
             <div class="icon-box icon-box-pink">
               <div class="icon"><i class="bx bx-plus-medical"></i></div>
-              <h4 class="title"><a href="">Skilled Nursing</a></h4>
-              <p class="description">Direct one-on-one care for clients with a chronic illness or disability. Our Licensed and Registered Nurses will follow a care and treatment plan that is coordinated by your physician.</p>
+
+              <h4 class="title enText"><a href="">Skilled Nursing</a></h4>
+              <p class="description enText">Direct one-on-one care for clients with a chronic illness or disability. Our Licensed and Registered Nurses will follow a care and treatment plan that is coordinated by your physician.</p>
+
+              <h4 class="title frText"><a href=""></a>Soins infirmiers spécialisés</h4>
+              <p class="description frText">Soins individuels directs pour les clients souffrant d’une maladie chronique ou d’un handicap. Nos infirmières diplômées et agréées suivront un plan de soins et de traitement, coordonné par votre médecin.</p>
+
+
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box icon-box-cyan">
               <div class="icon"><i class="bx bx-clinic"></i></div>
-              <h4 class="title"><a href="">Home Health Aide</a></h4>
-              <p class="description">Experienced and Certified Aides who are also able to work under the supervision of a Registered Nurse. Our personally vetted aides pass strict background qualifications prior to hire, and are hand-matched with you to ensure a good fit.</p>
+
+              <h4 class="title enText"><a href="">Home Health Aide</a></h4>
+              <p class="description enText">Experienced and Certified Aides who are also able to work under the supervision of a Registered Nurse. Our personally vetted aides pass strict background qualifications prior to hire, and are hand-matched with you to ensure a good fit.</p>
+            
+              <h4 class="title frText"><a href="">Aide à domicile/Aide-soignante</a></h4>
+              <p class="description frText">Aides expérimentés et certifiés qui sont également capables de travailler sous la supervision d’une infirmière autorisée. Nos assistants, qui ont été soumis à un contrôle personnel, passent par des vérifications strictes de leurs antécédents avant d’être embauchés et sont jumelés avec vous afin de garantir une bonne adéquation.</p>
+
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-green">
               <div class="icon"><i class="bx bx-handicap"></i></div>
-              <h4 class="title"><a href="">Private Physical or Occupational Therapy</a></h4>
-              <p class="description">Our certifed therapists can help with rehabilitative and individualized therapy in the privacy of yours or your loved one's home, eliminating unnecessary trips to crowded rehabilitation centers.</p>
+
+              <h4 class="title enText"><a href="">Private Physical or Occupational Therapy</a></h4>
+              <p class="description enText">Our certifed therapists can help with rehabilitative and individualized therapy in the privacy of yours or your loved one's home, eliminating unnecessary trips to crowded rehabilitation centers.</p>
+              
+              <h4 class="title frText"><a href="">Thérapie physique ou ergothérapie privée</a></h4>
+              <p class="description frText">Nos thérapeutes certifiés peuvent vous aider à suivre une thérapie de réadaptation individualisée dans l’intimité de votre domicile ou de celui de votre proche, éliminant ainsi les déplacements inutiles dans des centres de réadaptation bondés.</p>
+
+            
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="bx bx-heart-circle"></i></div>
-              <h4 class="title"><a href="">Case Management/Physician Referrals</a></h4>
-              <p class="description">Our case management team is specifically trained to provide practical and emotional support during times of health crises. We can provide logistical support and guidance for how to handle your medical situation as well as provide referrals to physicians and additional healthcare providers as needed.</p>
+              
+              <h4 class="title enText"><a href="">Case Management/Physician Referrals</a></h4>
+              <p class="description enText">Our case management team is specifically trained to provide practical and emotional support during times of health crises. We can provide logistical support and guidance for how to handle your medical situation as well as provide referrals to physicians and additional healthcare providers as needed.</p>
+              
+              <h4 class="title frText"><a href="">Gestion des cas et orientation vers des médecins</a></h4>
+              <p class="description frText">Notre équipe de gestion de cas est spécialement formée pour apporter un soutien pratique et émotionnel en période de crise sanitaire. Nous pouvons vous fournir un soutien logistique et des conseils sur la manière de gérer votre situation médicale, ainsi que vous orienter vers des médecins et d’autres prestataires de soins de santé si nécessaire.</p>
+
+            
             </div>
           </div>
 
@@ -186,22 +292,43 @@
     <!--PREMIUM SERVICES SUB-SECTION-->
     <section id="servicesPremium" class="services section-bg">
       <div class="container">
-        <div class="section-title" data-aos="fade-up">
+
+        <div class="section-title enText" data-aos="fade-up">
           <h2>Premium Services</h2>
           <p>For our most discerning clientele, GHP offers additional services that create an unparalleled concierge healthcare experience.</p>
         </div>
+        <div class="section-title frText" data-aos="fade-up">
+          <h2>Services Premium</h2>
+          <p>Pour notre clientèle la plus exigeante, GHP propose des services supplémentaires garantissant des prestations de soins de santé de conciergerie inégalées pour vos displacements and organisation d' événements.</p>
+        </div>
+
         <div class="row">
           <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box icon-box-blue">
+
+
+            <div class="icon-box icon-box-blue enText">
               <div class="icon"><i class="bx bxs-plane"></i></div>
               <h4 class="title"><a href="">Lifestyle Health Services</a></h4>
               <p class="description">Our team has immense experience in supporting your lifestyle. We want to help you live your life as freely as you possibly can. We will assess health needs with your physician and family to create a custom plan of care that fits your trip's itinerary. Use your own itinerary or work with us to curate one for you. Our partners throughout the world can grant you access to exclusive locations and activities not available to the general public. 
                 Whether you want to spend a weekend hunting in the country, or a week at a vineyard in Europe - our staff is able to travel with you to support your health needs, anywhere in the world. 
               </p>
             </div>
+
+            <div class="icon-box icon-box-blue frText">
+              <div class="icon"><i class="bx bxs-plane"></i></div>
+              <h4 class="title"><a href="">Services de santé liés au mode de vie</a></h4>
+              <p class="description">Notre équipe possède une immense expérience dans l’accompagnement de votre mode de vie. Nous voulons vous aider à vivre votre vie aussi librement que possible. 
+                Nous évaluerons les besoins en matière de santé avec votre médecin et votre famille afin de créer un plan de soins personnalisé qui s’adapte votre itinéraire de voyage. 
+                Utilisez votre propre itinéraire ou travaillez avec nous pour en créer un pour vous. Nos partenaires partout dans le monde peuvent vous donner accès à des lieux et à des activités exclusifs qui ne sont pas accessibles au grand public. 
+                Que vous souhaitiez passer un week-end de chasse à la campagne ou une semaine dans un vignoble en Europe, notre personnel est en mesure de voyager avec vous pour répondre à vos besoins de santé, partout dans le monde.
+              </p>
+            </div>
+
           </div>
           <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box icon-box-blue">
+
+
+            <div class="icon-box icon-box-blue enText">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4 class="title"><a href="">Visiting and International Patients</a></h4>
               <p class="description">Should you or your loved one's condition bring you to Houston, trust that our team will make you feel right at home. In addition to all of our healthcare services, we are 
@@ -215,6 +342,22 @@
                 </ul>
               </p>
             </div>
+
+            <div class="icon-box icon-box-blue frText">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Patients en visite et internationaux</a></h4>
+              <p class="description">Si votre état ou celui de votre proche vous amène à l'une de nos implantations, sachez que notre équipe vous acceuilera. En plus de tous nos services de soins de santé, nous sommes également en mesure de vous aider avec des services de conciergerie tels que :
+                <br></br>
+                <ul class="description text-left">
+                  <li>Planification de l’itinéraire du patient</li>
+                  <li>Dispositions relatives à l’hébergement ou au transport</li>
+                  <li>Interprètes Linguistiques</li>
+                  <li>Références de services pour tout ce dont vous pourriez avoir besoin</li>
+                </ul>
+              </p>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -225,12 +368,21 @@
   <section id="location" class="location">
     <div class="container">
 
-      <div class="section-title" data-aos="fade-up">
+      <div class="section-title enText" data-aos="fade-up">
         <h2>Our Locations</h2>
         <p>Whether you need assistance planning your stay or need assistance getting to a new destination, our team will work with you from planning through execution. Rest assured that your health and your experience are our top priority. 
         </p>
         <br>
         We have hubs and itineraries in these places to help you get settled and to help you enjoy your stay. Our partnerships in these locations can grant you access to exclusive activities and itineraries not available to the general public. Whether you would like to stay in our very own private chateau in the French wine country or have a different destination in mind - put your worries aside. We will work with you every step of the way. 
+      </div>
+
+      <div class="section-title frText" data-aos="fade-up">
+        <h2>Nos Implantations</h2>
+        <p>
+          Que vous ayez besoin d’aide pour planifier votre séjour ou pour vous rendre à une nouvelle destination, notre équipe travaillera avec vous de la planification à la réalisation. Soyez assuré que votre santé tout comme votre satisfaction sont notre priorité absolue.          
+        </p>
+        <br>
+        Nous avons des hubs et des itinéraires dans ces endroits pour vous aider à vous installer et à profiter de votre séjour. Nos partenariats dans ces lieux peuvent vous donner accès à des activités et des itinéraires exclusifs qui ne sont pas accessibles au grand public. Que vous souhaitiez séjourner dans notre propre château privé dans la région viticole française ou que vous ayez une autre destination en tête, mettez vos soucis de côté. Nous travaillerons avec vous à chaque étape du processus. 
       </div>
 
       <div class="row">
@@ -308,7 +460,7 @@
   </section><!-- End Location Section -->
 
     <!-- ======= Steps Section ======= -->
-    <section id="steps" class="steps section-bg" id=stepsSection>
+    <section id="steps" class="steps section-bg enText" id=stepsSection>
       <div class="section-title mt-5" data-aos="fade-up">
         <h2>How it Works</h2>
         <p class='text-large'>Put your worries aside. We make it easy to get the care that you need.</p>
@@ -351,12 +503,64 @@
     </div>
   </section><!-- End Steps Section -->
 
+  <section id="steps" class="steps section-bg frText" id=stepsSection>
+    <div class="section-title mt-5" data-aos="fade-up">
+      <h2>Comment Cela Fonctionne</h2>
+      <p class='text-large'>Mettez vos soucis de côté. Nous faisons en sorte qu’il soit facile d’obtenir les soins dont vous avez besoin.</p>
+    </div>
+    <div class='container'>
+      <div data-aos="fade-up">
+        <hr class='hidden-xs hidden-sm'>
+        <ul style="list-style-type: none;" class='row mt-4'>
+          <li class='col-md-3 col-xs-12'>
+            <div class='num text-font-display text-mint mb-2'>1</div>
+            <h4>Prenez Contact Avec Nous</h4>
+            <p>Nous vous poserons quelques questions afin de créer un plan de soins préliminaire adapté à votre budget et à vos besoins.</p>
+          </li>
+          <li class='col-md-3 col-xs-12'>
+            <div class='num text-font-display text-mint mb-2'>2</div>
+            <h4>Consultation Privée</h4>
+            <p>Nous nous réunirons et travaillerons en tête-à-tête avec vous et vos proches pour élaborer un plan de soins personnalisé répondant à vos besoins actuels.
+            </p>
+          </li>
+          <li class='col-md-3 col-xs-12'>
+            <div class='num text-font-display text-mint mb-2'>3</div>
+            <h4>Programmez Vos Services</h4>
+            <p>Nous travaillerons sans relâche pour trouver et vous affecter les prestataires de soins les plus adaptés à votre emploi du temps et à vos besoins médicaux.
+            </p>
+          </li>
+          <li class='col-md-3 col-xs-12'>
+            <div class='num text-font-display text-mint mb-2'>4</div>
+            <h4>Faites-vous Soigner</h4>
+            <p>Vos normes sont importantes pour nous. Nous exécuterons votre plan personnalisé à la perfection. Nous sommes disponibles 24 heures sur 24, 7 jours sur 7, pour répondre à toutes vos questions et préoccupations. </p>
+          </li>
+        </ul>
+          <p>
+            Tous nos services sont créés et facturés au cas par cas. Notre équipe de professionnels travaillera en étroite collaboration avec vous pour répondre à vos besoins spécifiques et divers afin de créer un plan de soins personnalisé qui répond à vos besoins. Notre clientèle passée va des résidents locaux aux VIP internationaux, en passant par les dirigeants d’entreprise et les célébrités – un honneur qui élève le niveau de service que nous cherchons à fournir. 
+            Nous nous efforcerons d’administrer efficacement nos services, où que vous soyez. À votre domicile, à l’hôpital ou en déplacement dans le monde entier, nous veillerons à ce que vous puissiez vivre aussi confortablement que possible.
+          </p>            
+            <br></br>
+        <div id="stepsFooter" style="text-align: center;">
+          </p>
+            <b><em>Nos services sont disponibles pour un minimum de quelques heures par jour à des soins 24heur sur 24, 7 jours sur 7.</em></b>
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+</section><!-- End Steps Section -->
+
+
    <!-- ======= Team Section ======= -->
    <section id="team" class="team">
     <div class="container">
 
-      <div class="section-title" data-aos="fade-up">
+      <div class="section-title enText" data-aos="fade-up">
         <h2>Executive Management</h2>
+      </div>
+
+      <div class="section-title frText" data-aos="fade-up">
+        <h2>Direction Générale</h2>
       </div>
 
       <div class="row">
@@ -369,11 +573,22 @@
               </div>
             </div>
           </div>
-          <h4>Gina Se</h4>
-                <b><span>Managing Partner</span></b>
-                <p>
-                  Founder of GHP Professional Health Services, Gina's 20+ years in the senior care and staffing industries leaves her with immense management experience to help GHP Global provide only the most personalized approach to patient care.
-                </p>
+
+          <div class="memberBio enText">
+            <h4>Gina Se</h4>
+                  <b><span>Managing Partner</span></b>
+                  <p>
+                    Founder of GHP Professional Health Services, Gina's 20+ years in the senior care and staffing industries leaves her with immense management experience to help GHP Global provide only the most personalized approach to patient care.
+                  </p>
+          </div>
+          <div class="memberBio frText">
+            <h4>Gina Se</h4>
+                  <b><span>Associé Gérant</span></b>
+                  <p>
+                    Fondatrice de GHP Professional Health Services, Gina a plus de 20 ans d’expérience dans les secteurs des soins aux personnes âgées et de la dotation en personnel, ce qui lui confère une immense expérience de gestion pour aider GHP Global à fournir uniquement l’approche la plus personnalisée des soins aux patients.
+                  </p>
+          </div>
+
         </div>
         <div class="col-xl-6 col-lg-8 col-md-12" data-aos="fade-up" data-aos-delay="300">
           <div class="member">
@@ -383,12 +598,24 @@
               </div>
             </div>
           </div>
-          <h4>Patrick Baugier</h4>
-          <b><span>Managing Partner</span></b>
-          <p>
-            Patrick is Chairman and Founder of Metrowine Distribution, one of the largest Bordeaux wine distributors in the US. Having grown up in Bordeaux, his family has been active in the wine business for four centuries. As a foreign trade advisor to the French government, nominated by the French prime minister,
-            Patrick's long career and family history in the luxury hospitality and logistics industries helps GHP Global maintain a high level of service throughout the world. 
-          </p>
+
+          <div class="memberBio enText">
+            <h4>Patrick Baugier</h4>
+            <b><span>Managing Partner</span></b>
+            <p>
+              Patrick is Chairman and Founder of Metrowine Distribution, one of the largest Bordeaux wine distributors in the US. Having grown up in Bordeaux, his family has been active in the wine business for four centuries. As a foreign trade advisor to the French government, nominated by the French prime minister,
+              Patrick's long career and family history in the luxury hospitality and logistics industries helps GHP Global maintain a high level of service throughout the world. 
+            </p>
+          </div>
+
+          <div class="memberBio frText">
+            <h4>Patrick Baugier</h4>
+            <b><span>Associé Gérant</span></b>
+            <p>
+              Patrick est président et fondateur de Metrowine Distribution, l’un des plus grands distributeurs de vins de Bordeaux aux États-Unis. Ayant grandi à Bordeaux, sa famille est active dans le secteur du vin depuis quatre siècles. Patrick en antssi conseiller du commerce extérieur du gouvernement français, nommé par le Premier ministre français et un membre de Young Presidents Organization.
+            La longue carrière de Patrick et l’histoire de sa famille dans les secteurs de l’hôtellerie de luxe et de la logistique aident GHP Global à maintenir un haut niveau de service dans le monde entier.
+            </p>
+          </div>
         </div>
 
       </div>
@@ -403,12 +630,23 @@
         <h2>Our Mission</h2>
       </div>
 
-      <div class="row">
+      <div class="row enText">
         <div class="col-xl-12 col-lg-10 pt-5 pt-lg-0" data-aos="fade-right">
           <p>My most fond childhood memories were the summers spent with my grandparents. They had so many stories to tell, and so many lessons to teach. When they both passed away, I really missed their presence. 
             Two of my first real jobs were in an elderly home and an insurance company that specialized in the elderly. It was then that I really learned the value of our aging population.
             Fast forward to 1999, my husband and I were given the opportunity to start a company that could serve our beloved elderly population. Through the years, we have been privileged to care for so many special people.
             GHP was built on our mission of LOVE; a word that translates to everything we do from the top down - the time and care we take for each and every one of our clients, our staff, and our culture. We're excited to have you as part of our family.</p>
+          &nbsp; - <a><img style ="width:10%" class="img-responsive"src="https://fontmeme.com/permalink/201009/500eb9c44a5ac816b8ca98a5bf66011e.png" alt="signature-fonts" border="0"></a>
+
+        </div>
+      </div>
+
+      <div class="row frText">
+        <div class="col-xl-12 col-lg-10 pt-5 pt-lg-0" data-aos="fade-right">
+          <p>Mes plus beaux souvenirs d’enfance sont les étés passés avec mes grands-parents. Ils avaient tant d’histoires à raconter, et tant de leçons à enseigner. Quand ils sont tous deux décédés, leur présence m’a vraiment manquée. 
+            Deux de mes premiers vrais emplois étaient dans une maison de retraite et dans une compagnie d’assurance spécialisée dans les personnes âgées. C’est alors que j’ai vraiment pris conscience de la valeur de notre population vieillissante.
+            En 1999, mon mari et moi avons eu l’occasion de créer une entreprise qui pourrait servir notre chère population âgée. Au fil des ans, nous avons eu le privilège de prendre soin de tant de personnes spéciales.
+            GHP a été construit sur le principe de l’AMOUR, un mot qui se traduit par tout ce que nous faisons, du sommet à la base – le temps et l’attention que nous accordons à chacun de nos clients, à notre personnel et à notre culture. Nous sommes ravis que vous fassiez partie de notre famille.</p>
           &nbsp; - <a><img style ="width:10%" class="img-responsive"src="https://fontmeme.com/permalink/201009/500eb9c44a5ac816b8ca98a5bf66011e.png" alt="signature-fonts" border="0"></a>
 
         </div>
@@ -420,53 +658,118 @@
     <section id="faq" class="faq section-bg">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>F.A.Q</h2>
+        <div class="section-title enText" data-aos="fade-up">
+          <h2>FAQ</h2>
           <p>Below are the answers to some commonly asked questions. If you have any additional questions, or if you would like to learn more about our services -  Please do not hesitate to contact us via phone, email or using the form located at the end of the page.</p>
+        </div>
+        <div class="section-title frText" data-aos="fade-up">
+          <h2>FAQ</h2>
+          <p>Vous trouverez ci-dessous les réponses à certaines questions fréquemment posées. Si vous avez d’autres questions, ou si vous souhaitez en savoir plus sur nos services, n’hésitez pas à nous contacter par téléphone, par e-mail ou en utilisant le formulaire situé à la fin de la page.</p>
         </div>
 
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapsed" href="#faq-list-1">Do you accept Medicare or Insurance? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+
+              <div class="enText">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapsed" href="#faq-list-1">Do you accept Medicare or Insurance? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              </div>
+              <div class="frText">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapsed" href="#faq-list-1">Acceptez-vous Medicare ou une assurance?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              </div>
+
               <div id="faq-list-1" class="collapse" data-parent=".faq-list">
-                <p>
+
+                <p class="enText">
                   GHP does not currently accept any form of health insurance aside from Long-Term Care. We accept Check, ACH Bank Transfer, Cash as well as Credit Card (2.99% Fee for CC Transactions). 
+                </p>
+
+                <p class="frText">
+                  GHP n’accepte actuellement aucune forme d’assurance maladie en dehors des soins de longue durée. Nous acceptons les chèques, les virements bancaires ACH, les espèces ainsi que les cartes de crédit (frais de 2,99% pour les transactions CC).
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Do you only serve the elderly?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+
+              <div class="enText">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Do you only serve the elderly?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              </div>
+              <div class="frText">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Vous ne servez que les personnes âgées?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              </div>
+
               <div id="faq-list-2" class="collapse" data-parent=".faq-list">
-                <p>
+
+                <p class=enText>
                   Although the majority of our clients are elderly, our care team of medical professionals are able to handle a variety of cases. We can provide care to who have recently been discharged from the hospital, as well as those of all ages with disabilities such as stroke or paraplegia. Please contact us to see how we can work together for your specific needs. 
                 </p>
+                <p class=frText>
+                  Bien que la majorité de nos clients soient des personnes âgées, notre équipe de professionnels de la santé est en mesure de traiter une grande variété de cas. Nous pouvons fournir des soins aux personnes qui viennent de sortir de l’hôpital, ainsi qu’aux personnes de tous âges souffrant d’un handicap tel qu’une attaque ou une paraplégie. Veuillez nous contacter pour voir comment nous pouvons travailler ensemble pour vos besoins spécifiques.
+                </p>
+
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">How much do Private Duty Services cost?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div class="enText">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">How much do Private Duty Services cost?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              </div>
+              <div class="frText">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Combien coûtent les services de garde privé?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              </div>
+
+              
               <div id="faq-list-3" class="collapse" data-parent=".faq-list">
-                <p>
+
+                <p class="enText">
                   All of our packages are completely bespoke. Our services are billed on a per hour basis. Additional requests are billed à la carte. Hourly rates are dependent on factors such as location, level of care required, and level of worker chosen (Nurse or Aide). Please contact us directly for a quote. 
+                </p>
+                <p class="frText">
+                  Toutes nos formules sont entièrement personnalisées. Nos services sont facturés à l’heure. Les demandes supplémentaires sont facturées à la carte. Les taux horaires dépendent de facteurs tels que le lieu, le niveau de soins requis et le niveau de travail choisi (infirmière ou aide-soignante). Veuillez nous contacter directement pour obtenir un devis.
+                </p>
+
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Do you service areas outside of Connecticut?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div class="enText">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Do you service areas outside of Connecticut?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              </div>
+              <div class="frText">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Desservez-vous des zones en dehors du Connecticut?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              </div>
+
+             
               <div id="faq-list-4" class="collapse" data-parent=".faq-list">
-                <p>
+
+                <p class="enText">
                  Our general service areas are the Tri-State areas of Connecticut, New York and New Jersey. However, we can accommodate clients in other areas of the country as well. Please inquire for more information. 
                 </p>
+                <p class="frText">
+                  Nos zones de services générales sont les trois États du Connecticut, de New York et du New Jersey. Cependant, nous pouvons également accueillir des clients dans d’autres régions du pays. Veuillez vous renseigner pour plus d’informations.
+                 </p>
+
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">What precautions are you taking for COVID-19? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div class="enText">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">What precautions are you taking for COVID-19? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              </div>
+              <div class="frText">
+                <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Quelles précautions prenez-vous pour COVID-19? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              </div>
+
               <div id="faq-list-5" class="collapse" data-parent=".faq-list">
-                <p>
+
+                <p class="enText">
                   Our staff of trained medical professionals take great precautions to ensure the safety of you and your family. Our staff and contractors are required to complete a self-assessment and temperature check before each shift. As per the latest CDC guidance in healthcare settings, they are required to wear masks for the duration of their shift as well as frequently disinfect their hands and commonly touched surfaces. 
+                </p>
+                <p class="frText">
+                  Notre équipe de professionnels médicaux qualifiés prend de grandes précautions pour assurer votre sécurité et celle de votre famille. Notre personnel et nos sous-traitants sont tenus de procéder à une auto-évaluation et à une vérification de la température avant chaque prise de poste. Les carnets de vaccination peuvent être fournis sur demande. Selon les dernières directives du CDC concernant les établissements de santé, ils doivent porter un masque pendant toute la durée de leur service et se désinfecter fréquemment les mains et les surfaces fréquemment touchées.
+                </p>
+
               </div>
             </li>
 
@@ -491,10 +794,14 @@
     <section id="contact" class="contact">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
+        <div class="section-title enText" data-aos="fade-up">
           <h2>Contact</h2>
           <p>For questions and inquiries about our services or if you are interested in joining our team, please don't hesitate to reach out to us either by phone, email, or by filling out the form below.
           </p>
+        </div>
+        <div class="section-title frText" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Pour toute question ou demande de renseignements sur nos services ou si vous souhaitez rejoindre notre équipe, n’hésitez pas à nous contacter par téléphone, par e-mail ou en remplissant le formulaire ci-dessous.</p>
         </div>
 
         <div class="row no-gutters justify-content-center" data-aos="fade-up">
@@ -503,7 +810,11 @@
             <div class="info">
               <div class="address">
                 <i class="icofont-google-map"></i>
-                <h4>Mailing Address:</h4>
+
+                <h4 class="enText">Mailing Address:</h4>
+                <h4 class="frText">Adresse Postale:</h4>
+
+
                  <a href='https://maps.google.com/?q=367 Riversville Rd. Greenwich, CT 06831'>
                   <a href='https://maps.apple.com/maps?q=367 Riversville Rd. Greenwich, CT 06831'>
                     <p><b>USA - </b>367 Riversville Rd. Greenwich, CT 06831</p></a></a>
@@ -518,9 +829,14 @@
                 <a href="mailto:info@ghphealthcare.com"><p>info@ghphealthcare.com</p></a>
               </div>
 
-              <div class="phone mt-4">
+              <div class="phone mt-4 enText">
                 <i class="icofont-phone"></i>
                 <h4>Call:</h4>
+                <a href="tel:713-665-2273"><p>713-665-2273</p></a>
+              </div>
+              <div class="phone mt-4 frText">
+                <i class="icofont-phone"></i>
+                <h4>Téléphone:</h4>
                 <a href="tel:713-665-2273"><p>713-665-2273</p></a>
               </div>
 
@@ -533,9 +849,12 @@
           </div> -->
 
         </div>
-
+        <!--EN FORM-->      
         <div class="row mt-5 justify-content-center" data-aos="fade-up">
-          <div class="col-lg-10">
+
+
+          <!--ENGLISH FORM-->
+          <div class="col-lg-10 enText">
             <form action="https://formspree.io/f/mqkwbjdz" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
@@ -561,6 +880,36 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+          <!--FRENCH FORM-->
+          <div class="col-lg-10 frText">
+            <form action="https://formspree.io/f/mqkwbjdz" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre Adresse Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Envoyer un Message</button></div>
             </form>
           </div>
 
@@ -615,8 +964,13 @@
     </div>
 
     <div class="container">
-      <div class="copyright">
+
+      <div class="copyright enText">
         &copy; Copyright 2021 <strong><span>GHP Global Health Services LLC</span></strong>. All Rights Reserved
+      </div>
+      <div class="copyright frText">
+        &copy; Copyright 2021 <strong><span>GHP Global Health Services LLC</span></strong>. Tous Droits Réservés
+
       </div>
 <!--       <div class="credits">
         Designed by Julian Se
@@ -642,6 +996,32 @@
   <!--Nanogallery-->
   <script type="text/javascript" src="assets/js/jquery.nanogallery2.min.js"></script>
 
+  <!--SCRIPT TO TOGGLE FR/EN TRANSLATIONS-->
+
+  <script>
+
+    $(document).ready(function(){
+
+      $(".languageSwitcherButton").on("click",function(){
+
+        //Changes Classes dynamically
+          $(".frText").toggleClass("shown")
+          $(".enText").toggleClass("hidden")
+
+          $(".languageSwitcherDisplay").text((i, text) => {
+            // Selected Language
+            return text == "🇫🇷 Française" ? "🇺🇸 English" : "🇫🇷 Française"
+          })
+
+          $(this).text((i,text) => {
+            // Selector Option
+            return text == "🇺🇸 English" ? "🇫🇷 Française" : "🇺🇸 English"
+          })
+      });
+    });
+ </script>
+
 </body>
 
 </html>
+jq
