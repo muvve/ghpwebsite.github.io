@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GHP Staffing Solutions - Work Submissions</title>
+</head>
+<style>
+    body {
+        background-color: #dff1f9;
+    }
+    
+    #topLogo {
+        max-width: 200px;
+        max-height: 100px;
+    }
+</style>
+<body>
+    <img id="topLogo" src="assets/img/ghpLogo.png">
+    <!--Google Form iframe-->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-Zy9fP36HkDLevowTkbWPGmIlkyWOmZkaN6bv7NVQzYAaqw/viewform?embedded=true" width="100%" height="2792" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</body>
+<script>
+    // this fixes the scroll when the form is submitted
+    document.querySelector("iframe").addEventListener("load", 
+        function() {
+            window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    });
+    </script>
+</html>
